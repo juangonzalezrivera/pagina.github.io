@@ -1,0 +1,193 @@
+/*login*/
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-image:url(img/OIG1.png) ;
+	background-size: cover;
+	background-position: center;
+}
+
+.contenedor_formularios
+{
+	display: flex;
+	height: 500px;
+	max-width: 900px;
+	border-radius:20px;
+	box-shadow:0 5px 7px rgba(0, 0, 0, 0.1);
+	transition: all 1s ease;
+	margin: 10px;
+}
+
+.informacion {
+	width: 40%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background-color:#0c2790;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.hijos_formularios{
+	width: 100%;	
+	padding: 0 30%;
+	text-align: center;
+}
+
+.hijos_formularios h2 {
+	font-size: 2.3rem;
+	color:#ffffff;
+
+	
+}
+
+.hijos_formularios p { 
+	margin: 15px 0 ;
+	color: #ffffff;
+	
+}
+
+.hijos_formularios input{
+	background-color: transparent;
+	outline: none;
+	border:solid 2px #f5f5f5;
+	border-radius: 20px;
+	padding: 10px 20px;
+	color: #f5f5f5;
+	cursor: pointer;
+	transition:background-color .3s ease;
+}
+
+.hijos_formularios input:hover {
+    background-color: #9191bd;
+    border: none;
+    color: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor_informacion {
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+	text-align: center;
+	background-color: #f8f8f8;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.hijos_info{
+	padding: 0 30px;
+}
+
+.hijos_info h2 {
+	font-size: 2.5rem;
+	color:#333;
+}
+
+
+.form {
+	margin:30px 0 0 0 ;
+}
+
+
+.contenedor_informacion label{
+	display:flex;
+	align-items:center ;
+	margin-bottom: 15px;
+	border-radius: 20px;
+	padding: 0 0px;
+}
+
+.contenedor_informacion2 label{
+		display:flex;
+		align-items:center ;
+		margin-bottom: 15px;
+		border-radius: 20px;
+		padding: 0 10px;
+	}
+	
+
+.contenedor_informacion input{
+	background-color: transparent;
+	outline: none;
+	border:solid 2px #9191bd;
+	border-radius: 20px;
+	padding: 10px 20px;
+	color: #9191bd;
+	cursor: pointer;
+	transition:background-color .3s ease;
+	 }
+
+.contenedor_informacion input:hover {
+    background-color: #bf9b9b94;
+    border: none;
+    color: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor_informacion h2 { 
+	padding: 130px 10px 50px 50px;
+}
+
+
+.hide
+{
+	position: absolute;
+	transform: translateY(-300%);
+}
+
+
+
+
+/*--------------Tamaños-------------*/
+
+@media screen and (max-width:580px){
+	html{
+		font-size: 13px;
+	}
+	.contenedor_formularios{
+		height:auto;
+		flex-direction: column;
+		padding: 0 0px 0 30px;
+	}
+
+	.formulario div .alerta{
+		width: 290px;
+		text-align: left;
+		border-radius: 7px;
+		margin-bottom: 10px;
+		font-size: 1rem;
+	}
+	
+	.hijos_formularios h2{
+		font-size: 2.8rem;
+	}
+
+	.informacion{
+		width: 100%;
+		padding: 20px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 0px;
+	}
+	.contenedor_informacion{
+		width: 100%;
+		padding: 20px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		border-top-right-radius: 0px;
+	}
+	.contenedor_informacion h2 { 
+		padding: 10px 10px 10px 50px;}
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404</title>
+    <link rel="stylesheet" href="styles3.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="container_404">
+        <h1>Error 404</h1>
+        <p>Esta página no se encuentra disponible en estos momentos. Disculpa las molestias</p>
+        <a href="https://www.youtube.com/watch?v=mCdA4bJAGGk" class="boton">Pagina principal</a>
+        <br>
+        <button onclick="showGame()" class="boton">Jugar</button>
+        <div id="game-container" class="game-container">
+            <h2>Piedra, Papel o tijera</h2>
+            <div class="marcador">
+                <div class="jugador-label badge">Jugador</div>
+                <div class="compu-label badge">PC</div>
+                <span id="jugador-puntaje">0</span> :
+                <span id="computadora-puntaje">0</span>
+            </div>
+
+            <div class="resultado">
+                <p>A jugar!!!</p>
+            </div>
+
+            <div class="opciones">
+                <div class="eleccion" id="piedra" onclick="jugar('piedra')">
+                    <img src="Imagenes/Piedra.PNG" alt="Piedra">
+                </div>
+                <div class="eleccion" id="papel" onclick="jugar('papel')">
+                    <img src="Imagenes/papel.PNG" alt="Papel">
+                </div>
+                <div class="eleccion" id="tijera" onclick="jugar('tijera')">
+                    <img src="Imagenes/Tijera.PNG" alt="Tijera">
+                </div>
+            </div>
+      
+            
+            
+            <div id="jugador-seleccion" class="seleccion"></div>
+            <div id="computadora-seleccion" class="seleccion"></div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="main3.js"></script>
+</body>
+</html>

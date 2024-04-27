@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #3b3c3c;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_404 {
+    text-align: center;
+    max-width: 400px;
+    width:100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    line-height: 1.7;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background: #16bdd7;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Estilos para el cuadro de juego */
+.game-container {
+    display: none;
+    background: #949494;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.marcador{
+    border: 3px solid black;
+    margin: 2px;
+    width: 200px;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 20px ;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    right: -55px;
+    
+
+}
+
+.badge{
+    background: #16bdd7;
+    font-size: 15px;
+    border:2px solid #fff;
+    border-radius: 10px;
+    padding: 3px 2px;
+}
+
+.jugador-label {
+    position: absolute;
+    top:auto;
+    left: -25px;
+    height: 40%;
+    width: 30%;
+}
+
+.compu-label {
+    position: absolute;
+    top:auto;
+    right: -25px;
+    height: 40%;
+    width: 30%;
+}
+
+#jugador-puntaje, #computadora-puntaje{
+    padding: 5px;
+    font-size: 50px;
+}
+
+.resultado {
+    font-size: 40px;
+    color:#fff;
+}
+
+.resultado>p {
+    text-align: center;
+}
+
+.opciones{
+    text-align: center;
+    align-items: center;
+    margin:50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.opciones img {
+    border-radius: 80px;
+    width: 100px;
+    height: 100px;
+}
+
+.opciones .eleccion:hover {
+    transform: scale(1.2);  
+    transition: transform 0.3s ease; }
+
+.eleccion{
+    display: inline-block;
+    border:5px solid #ffffff;
+    border-radius: 60%;
+    background: #979595;
+    pad: 15px;
+}
+
+.opciones .eleccion {
+    margin: 3px 3px 3px 3px; 
+}
+
+.seleccion{
+    font-size: 30px;
+    color: white;
+}
+
+.boton:hover {
+    transform: scale(1.1);
+    background-color: #1f7c8a;
+ }
